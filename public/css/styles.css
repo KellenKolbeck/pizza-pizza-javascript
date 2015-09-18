@@ -6,11 +6,10 @@
 body {
   background: green;
   color: white;
-  background-image: url("public/img/space-pizza.gif");
 }
 
 #right-column {
   float: right;
   text-align: center;
-  
+
 }

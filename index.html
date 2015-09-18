@@ -10,9 +10,92 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-xs-6">
-          This is a test
-        </div>
+          <div class="jumbotron">
+            <h2><center>Welcome to Sal's Pizza!</center></h2>
+          </div>
+          <div class="col-xs-6">
+            <h3>Design your custom pizza:</h3>
+            <form class="form-group" id="new-pizza-form">
+              <label for="pizza-name">Enter a name for your pizza:</label>
+              <input type="text" id="pizza-name" class="form-control" placeholder="ex. Bill and Ted's Excellent Za">
+              <label for="pizza-quantity">How many of this pizza would you like?</label>
+              <select class="form-control" id="pizza-quantity">
+                <option>Select number of pizzas</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <label for="form-control" id="pizza-size">What size pizza would you like?</label>
+              <select class="form-control" id="pizza-size">
+                <option>Select the size of your pizza</option>
+                <option value="small">S</option>
+                <option value="medium">M</option>
+                <option value="large">L</option>
+                <option value="x-large">XL</option>
+              </select>
+              <h4>What toppings would you like to add? (choose up to 4)</h4>
+              <label for="form-control" id="pizza-topping1">First topping:</label>
+              <select class="form-control" id="pizza-topping1">
+                <option>--</option>
+                <option value="pepperoni">Pepperoni</option>
+                <option value="sausage">Sausage</option>
+                <option value="canadian-bacon">Canadian Bacon</option>
+                <option value="bacon">Bacon</option>
+                <option value="mushrooms">Mushrooms</option>
+                <option value="onions">Onions</option>
+                <option value="bell peppers">Bell Peppers</option>
+                <option value="anchovies">Anchovies</option>
+              </select>
+              <label for="form-control" id="pizza-topping2">Second topping:</label>
+              <select class="form-control" id="pizza-topping2">
+                <option>--</option>
+                <option value="pepperoni">Pepperoni</option>
+                <option value="sausage">Sausage</option>
+                <option value="canadian-bacon">Canadian Bacon</option>
+                <option value="bacon">Bacon</option>
+                <option value="mushrooms">Mushrooms</option>
+                <option value="onions">Onions</option>
+                <option value="bell peppers">Bell Peppers</option>
+                <option value="anchovies">Anchovies</option>
+              </select>
+              <label for="form-control" id="pizza-topping3">Third topping:</label>
+              <select class="form-control" id="pizza-topping3">
+                <option>--</option>
+                <option value="pepperoni">Pepperoni</option>
+                <option value="sausage">Sausage</option>
+                <option value="canadian-bacon">Canadian Bacon</option>
+                <option value="bacon">Bacon</option>
+                <option value="mushrooms">Mushrooms</option>
+                <option value="onions">Onions</option>
+                <option value="bell peppers">Bell Peppers</option>
+                <option value="anchovies">Anchovies</option>
+              </select>
+              <label for="form-control" id="pizza-topping4">Fourth topping:</label>
+              <select class="form-control" id="pizza-topping4">
+                <option>--</option>
+                <option value="pepperoni">Pepperoni</option>
+                <option value="sausage">Sausage</option>
+                <option value="canadian-bacon">Canadian Bacon</option>
+                <option value="bacon">Bacon</option>
+                <option value="mushrooms">Mushrooms</option>
+                <option value="onions">Onions</option>
+                <option value="bell peppers">Bell Peppers</option>
+                <option value="anchovies">Anchovies</option>
+              </select>
+              <br><br>
+              <button type="submit" id="submit-form" class="btn btn-danger">Order this pizza!!!</button>
+
+            </form>
+          </div>
+
+          <div class="col-xs-6" id="right-column">
+            <h3>Here are your pizzas:</h3>
+              <ol id="ordered-pizzas">
+                <li id="pizza-name" id="pizzaCost"></li>
+              </ol>
+          </div>
       </div>
     </div>
   </body>
